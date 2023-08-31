@@ -1,6 +1,7 @@
 import axios from 'axios';
 const URL = 'https://books-backend.p.goit.global/books/category-list';
 const categoriesList = document.querySelector('.categories-list');
+let activeItem = '';
 
 async function getCategories() {
   const { data } = await axios.get(URL);
